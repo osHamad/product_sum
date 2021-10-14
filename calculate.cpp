@@ -2,9 +2,13 @@
 
 void product_sum(int product, int sum){
 	for (int i = 0; i <= product; i++){
-		std::cout << i;
+		for (int j = 0; j <= product; j++){
+			if (i+j == sum && i*j == product){
+				std::cout << i << ", " << j << "\n";
+			}
+		}
 	}
-	std::cout << product << ", " << sum;
+	
 }
 
 int main(){
