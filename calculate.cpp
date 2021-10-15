@@ -22,6 +22,8 @@ int main(){
 	std::cout << "Insert Sum: ";
 	std::cin >> sum;
 	product_sum(product, sum);
+	int x;
+	std::cin >> x;
 
 	return 0;
 }
