@@ -1,11 +1,10 @@
 #include <iostream>
 
 void product_sum(int product, int sum){
-	for (int i = 0; i <= product; i++){
-		for (int j = 0; j <= product; j++){
-			if (i+j == sum && i*j == product){
-				std::cout << i << ", " << j << "\n";
-			}
+	for (int i = 0; i <= abs(product); i++){
+		int j = sum - i;
+		if (i*j == product){
+			std::cout << i << ", " << j << "\n";
 		}
 	}
 	
